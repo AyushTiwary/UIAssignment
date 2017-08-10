@@ -1,0 +1,32 @@
+.imageFront {
+   position: relative;
+   background-size: cover;
+   filter: blur(2px);
+   overflow:hidden;
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+}
+
+.col-1{width: 20%;}
+
+@media only screen and (max-width: 480px) {
+    /* For mobile phones: */
+    .col-1{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* For mobile phones: */
+    .col-1{
+        width: 50%;
+    }
+}
